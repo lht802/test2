@@ -1,155 +1,106 @@
+**目录**
 
-## Java
+[把握现状和设定目标](#把握现状和设定目标)
 
-- [MyBatis-Plus中如何使用ResultMap](Java/resultmap-in-mybatis-plus.md)
-- [换种思路写Mock，让单元测试更简单](Java/testable-mock.md)
-- [一文读懂Java中的动态代理](Java/dynamic-proxy-in-java.md)
-- [云原生时代的Java](Java/java-in-the-future.md)
-  
-- [阿里巴巴Java开发手册——编程规约](Java/alibaba-java-coding-guidelines-1.md)
-- [阿里巴巴Java开发手册——异常处理、MySQL 数据库](Java/alibaba-java-coding-guidelines-2.md)
+[2a数据原型的制作](#2a数据原型的制作)
 
-## 大数据
+[2a1 用工艺产能输入模板数据](#2a1-用工艺产能输入模板数据)
 
-- [Flink流处理基础](BigData/flink-stream-processing-theory.md)
-- [Flink把数据sink到kafka多个topic](BigData/flink-kafka-sink-multiple-topics.md)
+[2a2 班次的设定](#2a2-班次的设定)
 
-- [centos7安装部署opentsdb2.4.0](BigData/how-to-install-opentsdb.md)
-- [opentsdb探索之路——部分设计与实现](BigData/the-road-of-exploring-opentsdb.md)
+[2a3 生产日历的设定](#2a3-生产日历的设定)
 
-## Python
+[2a4 资源表、物料表的设定](#2a4-资源表物料表的设定)
 
-- [Python开发环境搭建](Python/python-environment.md)
-- [一文上手Python3](https://www.cnblogs.com/bytesfly/p/python.html)
+[2a5 计划基准时间、显示开始时间的设定](#2a5-计划基准时间显示开始时间的设定)
 
-## AI
+[2a6 副资源（作业员）的设定](#2a6-副资源作业员的设定)
 
-**科学计算库:**
-- [快速上手NumPy](https://www.cnblogs.com/bytesfly/p/numpy.html)
-- [快速上手pandas(上)](https://www.cnblogs.com/bytesfly/p/pandas-1.html)
-- [快速上手pandas(下)](https://www.cnblogs.com/bytesfly/p/pandas-2.html)
+[2a7 内设置资源的设定](#2a7-内设置资源的设定)
 
+[2a8 外设置资源的设定](#2a8-外设置资源的设定)
 
-**机器学习:**
-- [从线性回归走进机器学习](AI/linear-regression.md)
-- [最大似然估计](AI/maximum-likelihood-estimation.md)
+[2a9 设定组装供需以后的模板数据](#2a9-设定组装供需以后的模板数据)
 
-**深度学习:**
-- [PyTorch中backward()函数的gradient参数作用](AI/why-need-gradient-arg-in-pytorch-backward.md)
+[2a10 输入制造订单，进行排程](#2a10-输入制造订单进行排程)
 
+[2a11 参数化BOM](#2a11-参数化bom)
 
-## MySQL
+[2a12 技能表](#2a12-技能表)
 
-- [一文学会MySQL的explain工具](MySQL/how-to-use-mysql-explain.md)
-- [一文读懂MySQL的索引结构及查询优化](MySQL/mysql-index-theory-and-best-practice.md)
-- [一文读懂MySQL的事务隔离级别及MVCC机制](MySQL/mysql-transaction-innodb-mvcc.md)
+[2b消除订单逾期、缩短制造提前期的技巧](#2b消除订单逾期缩短制造提前期的技巧)
 
-## Netty
+[2b1 确认逾期的制造订单](#2b1-确认逾期的制造订单)
 
-- [不识Netty真面目，只缘未读此真经](Netty/the-truth-of-netty.md)
+[2b2 变更开工时间，解除订单逾期](#2b2-变更开工时间解除订单逾期)
 
-## 设计模式
+[2b3 分割制造订单，解除订单逾期](#2b3-分割制造订单解除订单逾期)
 
-- [设计模式概述](DesignPattern/overview.md)
-- [面向对象设计原则](DesignPattern/object-oriented-design-principles.md)
+[2b4 分割工作，解除订单逾期](#2b4-分割工作解除订单逾期)
 
-**创建型模式:**
-- [工厂模式三兄弟(Factory Pattern)](DesignPattern/factory-pattern.md)
-- [单例模式(Singleton Pattern)——确保对象的唯一性](DesignPattern/singleton-pattern.md)
-- [原型模式(Prototype Pattern)——对象的克隆](DesignPattern/prototype-pattern.md)
-- [建造者模式(Builder Pattern)——复杂对象的组装与创建](DesignPattern/builder-pattern.md)
+[2b5 变更接续方法，解除订单逾期](#2b5-变更接续方法解除订单逾期)
 
-**结构型模式:**
-- [适配器模式(Adapter Pattern)——不兼容结构的协调](DesignPattern/adapter-pattern.md)
-- [桥接模式(Bridge Pattern)——处理多维度变化](DesignPattern/bridge-pattern.md)
-- [组合模式(Composite Pattern)——树形结构的处理](DesignPattern/composite-pattern.md)
-- [装饰模式(Decorator Pattern)——扩展系统功能](DesignPattern/decorator-pattern.md)
-- [外观模式(Facade Pattern)——提供统一的入口](DesignPattern/facade-pattern.md)
-- [享元模式(Flyweight Pattern)——实现对象的复用](DesignPattern/flyweight-pattern.md)
-- [代理模式(Proxy Pattern)——对象的间接访问](DesignPattern/proxy-pattern.md)
-- [一文读懂Java中的动态代理](Java/dynamic-proxy-in-java.md)
+[2c 命令与排产方案](#2c-命令与排产方案)
 
-**行为型模式:**
-- [职责链模式(Chain of Responsibility Pattern)——请求的链式处理](DesignPattern/chain-of-responsibility-pattern.md)
-- [命令模式(Command Pattern)——请求发送者与接收者解耦](DesignPattern/command-pattern.md)
-- [解释器模式(Interpreter Pattern)——自定义语言的实现](DesignPattern/interpreter-pattern.md)
-- [迭代器模式(Iterator Pattern)——遍历聚合对象中的元素](DesignPattern/iterator-pattern.md)
-- [中介者模式(Mediator Pattern)——协调多个对象之间的交互](DesignPattern/mediator-pattern.md)
-- [备忘录模式(Memento Pattern)——撤销功能的实现]()
-- [观察者模式(Observer Pattern)——对象间的联动]()
-- [状态模式(State Pattern)——处理对象的多种状态及其相互转换]()
-- [策略模式(Strategy Pattern)——算法的封装与切换]()
-- [模板方法模式(Template Method Pattern)——复杂流程步骤的设计]()
-- [访问者模式(Visitor Pattern)——操作复杂对象结构]()
+[2c1 设定分派规则](#2c1-设定分派规则)
 
+[2c2 设定评估表达式](#2c2-设定评估表达式)
 
-## 技术调研and问题排查
+[2c3 订单筛选、期间设定、复合排程](#2c3-订单筛选期间设定复合排程)
 
-**技术调研:**
-- [MongoDB -> kafka 高性能实时同步方案](ProblemResearch/data-from-mongodb-to-kafka.md)
+[2c4 正方向/逆方向排程](#2c4-正方向逆方向排程)
 
+[2c5瓶颈中心排程](#2c5瓶颈中心排程)
 
-**问题排查:**
-- [kafka启动报错"A broker is already registered on the path /brokers/ids/1"排查](ProblemResearch/kafka-broker-already-registered.md)
-- [使用ClouderaManager管理的HBase的RegionServer无法启动排查](ProblemResearch/hbase-region-server-cannot-start.md)
+[2d 资源条件设定及更现实设定的追加](#2d-资源条件设定及更现实设定的追加)
 
+[2d1 按照资源量设定资源的资源量制约](#2d1-按照资源量设定资源的资源量制约)
 
+[2d2 设定资源的分派有效条件](#2d2-设定资源的分派有效条件)
 
-## 工具
+[2d3 设置制造中断时间MAX的设定](#2d3-设置制造中断时间max的设定)
 
-- [使用GitHub Pages + docsify快速搭建一个站点](Tool/github-page-docsify.md)
-- [一文学会在Markdown中编辑数学符号与公式](Tool/markdown-formula.md)
-- [百闻不如一试——公式图片转Latex代码](Tool/image-to-latex.md)
-  
-- [Linux工作环境搭建——deepin系统的使用](Tool/work-on-deepin-linux.md)
-- [Git使用汇总](Tool/about-git.md)
+[2e 与工作相关的各种制约](#2e-与工作相关的各种制约)
 
-- [Kafka常用topic操作命令](Tool/kafka-commands.md)
-- [使用脚本+kafka自带命令行工具 统计数据写入kafka速率](Tool/kafka-write-speed.md)
+[2e1 关于时间固定级别的说明以及设定](#2e1-关于时间固定级别的说明以及设定)
 
-- [MacOS如何调整JD-GUI反编译工具字体大小](Tool/how-to-adjust-jd-gui-fontsize.md)
+[2e2 数量固定级别的说明以及设定](#2e2-数量固定级别的说明以及设定)
 
-- [实用网站与工具](Tool/awesome-sites.md)
+[2f 数据原型的制作——热处理的追加](#2f-数据原型的制作热处理的追加)
 
-## 程序人生
+[2f1 订单规格（处理温度）的设定](#2f1-订单规格处理温度的设定)
 
-- [请用一句话证明你是程序员](Life/how-to-prove-that-you-are-a-programmer.md)
-- [工作中如何做好技术积累](Life/study-vs-work.md)
-- [程序员的谎言](Life/what-are-the-most-common-lies-told-by-programmers.md)
-- [程序员的酒后真言](Life/drunk-post-of-a-programmer.md)
+[2f2 工序选定器有效条件的设定](#2f2-工序选定器有效条件的设定)
 
-## 面试题
+[2f3 用规格表示显示颜色的设定](#2f3-用规格表示显示颜色的设定)
 
-- [非技术面试题汇总](Interview/non-technical-interview-questions.md)
+[2f4 由于特征切换而发生的切换时间的设定](#2f4-由于特征切换而发生的切换时间的设定)
 
-## LeetCode
+[2f5 追加炉资源的作业员](#2f5-追加炉资源的作业员)
 
-**动态规划:**
-- [爬楼梯](LeetCode/0070-climbing-stairs.md)
-- [使用最小花费爬楼梯](LeetCode/0746-min-cost-climbing-stairs.md)
-- [买卖股票的最佳时机](LeetCode/0121-best-time-to-buy-and-sell-stock.md)
+[2f6 设定资源量](#2f6-设定资源量)
 
-**贪心算法:**
-- [跳跃游戏](LeetCode/0055-jump-game.md)
-- [跳跃游戏 II](LeetCode/0045-jump-game-ii.md)
-- [买卖股票的最佳时机 II](LeetCode/0122-best-time-to-buy-and-sell-stock-ii.md)
+[2f7 设定炉资源](#2f7-设定炉资源)
 
-**链表:**
-- [反转链表](LeetCode/0206-reverse-linked-list.md)
+[2f8 设定外协资源](#2f8-设定外协资源)
 
-**二叉树**
-- [二叉树的层序遍历](LeetCode/0102-binary-tree-level-order-traversal.md)
-- [对称二叉树](LeetCode/0101-symmetric-tree.md)
-- [二叉树的前序遍历](LeetCode/0144-binary-tree-preorder-traversal.md)
-- [二叉树的中序遍历](LeetCode/0094-binary-tree-inorder-traversal.md)
-- [二叉树的后序遍历](LeetCode/0145-binary-tree-postorder-traversal.md)
+[2f9 设定任务主资源（资源的组合）](#2f9-设定任务主资源资源的组合)
 
-**栈和队列**
-- [有效的括号](LeetCode/0020-valid-parentheses.md)
+[2f10任务选定器有效条件的设定](#2f10任务选定器有效条件的设定)
 
-**数组**
-- [移除元素](LeetCode/0027-remove-element.md)
+[2f11 外协资源的移动时间的设定](#2f11-外协资源的移动时间的设定)
 
-**数学**
-- [只出现一次的数字](LeetCode/0136-single-number.md)
+[2f12 设定无限能力](#2f12-设定无限能力)
+
+[2f13 制造中断时间 MAX、设置中断时间 MAX 的设定](#2f13-制造中断时间-max设置中断时间-max-的设定)
+
+[2g 数据原型的制约——其它功能](#2g-数据原型的制约其它功能)
+
+[2g1 根据规格的分派条件的设定](#2g1-根据规格的分派条件的设定)
+
+[2g2 由于物料切换、副资源切换而发生的切换时间的设定](#2g2-由于物料切换副资源切换而发生的切换时间的设定)
+
+[2g3 使用指令有效条件的设定](#2g3-使用指令有效条件的设定)
+
+[附录A 利益增大诊断确认表](#附录a-利益增大诊断确认表)
 
