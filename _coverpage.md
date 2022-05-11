@@ -1,4 +1,3 @@
-![icon](https://cdn.jsdelivr.net/gh/wugenqiang/StaticRepo/images/icon.png)
 
 # *EasyAPS*
 # **排产易用户手册**
